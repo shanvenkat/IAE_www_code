@@ -1,0 +1,14 @@
+<div ng-if="activeReport">
+	<section class="usa-grid padding-top">
+		<div><a href="/reports">Back to Reports</a></div>
+
+		<br>
+
+		<div><i class="fa fa-star-o"></i><strong>{{activeReport.name}}</strong></div>
+		<p>{{activeReport.desc}}</p>
+	</section>
+
+	<section class="usa-grid">
+		<iframe name="viewport" ng-src="{{activeReport.url}}" class="no-frame" height="500"></iframe>
+	</section>
+</div>

@@ -1,0 +1,100 @@
+<header class="header theme-iae" role="banner">
+	<section id="iae-authentication-modal" class="gsa-authentication-modal hidden"></section>
+	<section id="iae-alerts">
+		<div class="usa"></div>
+	</section>
+	<section id="iae-header">
+		<header class="iae-header" role="banner">
+			<a href="#main-content" class="sr-only">skip to main content</a>
+			<div class="iae-header-login-bar usa-grid-full">
+				<div>
+					<button class="iae-btn-none iae-btn-blue-text">Sign In</button>
+					<div class="iae-modal hide" aria-hidden="true" role="dialog" tabindex="0">
+						<div class="iae-modal-container">
+							<div class="iae-modal-header-primary">
+								<button aria-label="Close modal" class="iae-btn-none iae-blue-text"><i class="fa fa-close modal-exit"></i></button>
+								<h1 class="usa-width-one-whole m_0">Sign In</h1>
+							</div>
+							<div class="iae-modal-body p_H-2x p_V-3x">
+								<div class="auth_container">
+									<div class="stepOne ">
+										<div class="usa-grid-full flexcontainer">
+											<div class="usa-width-one-half flexitem p_R-4x">
+												<span class="iae-icon iae-card"></span>
+												<h2 tabindex="0" class="m_T-3x">I have a PIV or CAC card</h2>
+												<p tabindex="0" id="pivcac_desc">Government employees only: please insert your card then click the button below.</p>
+												<button aria-describedby="pivcac_desc" aria-label="Sign In with PIV or CAC" class="usa-button-primary m_T-3x m_B-5x" tabindex="0">Sign In With Card</button>
+											</div>
+											<div class="usa-width-one-half flexitem p_L-8x iae-border-left">
+												<span class="iae-icon iae-email"></span>
+												<h2 tabindex="0" class="m_T-3x relative ">
+													<span>I want to sign in with email</span>
+													<span class="undefined iae-popover">
+														<button class="inline btn-round sign-in-info" aria-label="More information about signing in" tabindex="0"><i class="fa fa-info"> </i></button>
+														<span class="iae-popover-container" role="dialog" aria-hidden="true" hidden="" tabindex="0">
+															<span class="iae-popover-title"></span>
+															<p class="iae-popover-body">Your SAM.gov account will enable single sign on across 10 federal award systems.</p>
+														</span>
+													</span>
+												</h2>
+												<a href="" class="auth-error" hidden="" aria-hidden="true"><strong></strong></a>
+												<div class=""><label class="m_T-2x" for="auth_email" id="auth_email_label"><span>Email</span><span class="sr-only"> Required</span></label><input type="text" id="auth_email" value="" name="username"></div>
+												<div class=""><label id="auth_password_label" for="auth_password" class="m_T-2x"><span>Password</span><span class="sr-only"> Required</span></label><input type="password" id="auth_password" value="" name="password"><a class="forgot_password" href="https://comp.pass.micropaas.io/#/"><span>Forgot</span><span class="sr-only"> password</span></a></div>
+												<button class="usa-button-primary m_T-5x m_B-3x" id="auth_submit">Next</button>
+											</div>
+										</div>
+										<div class="usa-grid-full auth_links">
+											<hr>
+											<div class="usa-width-one-half p_T-3x"><a class="pull-left" href="https://fsd.gov"><i class="fa fa-question-circle m_R-2x"></i><span>Need Help? Contact Federal Service Desk</span></a></div>
+											<div class="usa-width-one-half p_T-3x"><a class="pull-right" href=""><i class="fa fa-user m_R-2x"></i><span>Sign Up</span></a></div>
+										</div>
+									</div>
+									<div class="stepTwo hide ">
+										<div class="usa-grid-full">
+											<p>We take security seriously. We have sent you a one-time access code by text or email. </p>
+											<a href="" class="auth-error" hidden="" aria-hidden="true"><strong></strong></a>
+											<div class="enter-pin">
+												<div class=""><label for="pin-input">Enter your one-time access code</label><input id="pin-input" type="password" value=""></div>
+												<button class="usa-button-primary">Sign In</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="iae-fit-to-content usa-grid-full">
+				<button class="menu-btn iae-btn-none">Menu</button>
+				<div class="iae-header-logo" id="logo"><a href="http://comp.clpui.129.129.prod" accesskey="1" title="Home" aria-label="Home" alt="Visit GSA.gov to learn about the U.S. General Services Administration (opens in new tab)."><img alt="transition.sam.gov logo" src="/assets/img/SAM-logo.png"></a></div>
+			</div>
+			<nav>
+				<div class="dropdown-container takeme">
+					<div class="usa-grid-full">
+						<button class="dropdown-button"><span>Take me to </span><i class="fa fa-chevron-down"></i></button>
+						<div class="dropdown-inner-container usa-grid-full" role="menu">
+							<div role="group" class="dropdown-list" aria-hidden="true">
+								<ul class="dropdown-list-container usa-unstyled-list">
+									<li class="dropdown-list-item" target="_self" role="menuitem"><a href="http://fbo2.comp.micropaas.io/" class="dropdown-item-container"><span class="iae-icon iae-business dropdown-icon" aria-label="Business Opportunities icon"><span class="light_green"></span><span class="green1"></span><span class="white"></span><span class="green2"></span></span><span class=" dropdown-text">Business Opportunities</span></a></li>
+									<li class="dropdown-list-item" target="_self" role="menuitem"><a href="http://comp.119.119.prod/" class="dropdown-item-container"><span class="iae-icon iae-catalog dropdown-icon" aria-label="Federal Assistance Catalog icon"><span class="light_green"></span><span class="green1"></span><span class="white"></span><span class="green2"></span></span><span class=" dropdown-text">Federal Assistance Catalog</span></a></li>
+									<li class="dropdown-list-item" target="_self" role="menuitem"><a href="http://comp.fhui.46.46.prod" class="dropdown-item-container"><span class="iae-icon iae-hierarchy dropdown-icon" aria-label="Federal Hierarchy icon"><span class="light_green"></span><span class="green1"></span><span class="white"></span><span class="green2"></span></span><span class=" dropdown-text">Federal Hierarchy</span></a></li>
+									<li class="dropdown-list-item" target="_self" role="menuitem"><a href="" class=" disable dropdown-item-container"><span class="iae-icon iae-performance dropdown-icon" aria-label="Past Performance icon"><span class="light_green"></span><span class="green1"></span><span class="white"></span><span class="green2"></span></span><span class=" dropdown-text">Past Performance</span></a></li>
+									<li class="dropdown-list-item" target="_self" role="menuitem"><a href="" class=" disable dropdown-item-container"><span class="iae-icon iae-subaward dropdown-icon" aria-label="Sub-Award Reporting icon"><span class="light_green"></span><span class="green1"></span><span class="white"></span><span class="green2"></span></span><span class=" dropdown-text">Sub-Award Reporting</span></a></li>
+									<li class="dropdown-list-item" target="_self" role="menuitem"><a href="" class=" disable dropdown-item-container"><span class="iae-icon iae-procurement dropdown-icon" aria-label="Procurement Reporting icon"><span class="light_green"></span><span class="green1"></span><span class="white"></span><span class="green2"></span></span><span class=" dropdown-text">Procurement Reporting</span></a></li>
+									<li class="dropdown-list-item" target="_self" role="menuitem"><a href="" class=" disable dropdown-item-container"><span class="iae-icon iae-registration dropdown-icon" aria-label="Entity Registration icon"><span class="light_green"></span><span class="green1"></span><span class="white"></span><span class="green2"></span></span><span class=" dropdown-text">Entity Registration</span></a></li>
+									<li class="dropdown-list-item" target="_self" role="menuitem"><a href="" class=" disable dropdown-item-container"><span class="iae-icon iae-wage dropdown-icon" aria-label="Wage Determinations icon"><span class="light_green"></span><span class="green1"></span><span class="white"></span><span class="green2"></span></span><span class=" dropdown-text">Wage Determinations</span></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</nav>
+		</header>
+	</section>
+	<section id="iae-transient-messages">
+		<div class="usa iae-transient-message-list">
+			<div class="usa-grid-full"></div>
+		</div>
+	</section>
+</header>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta charset="utf-8">
+  <link href="https://markable.in/static/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://markable.in//static/css/style.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://markable.in/static/editor/css/view_file.css">
+  <link rel="stylesheet" type="text/css" href="https://markable.in/static/css/code.css">
+</head>
+<body>
+  <div class="container">
+    <div id="content">
+      <h1 id="fpds">FPDS</h1>
+<p>Cool stuff and documentation things to go here...</p>
+<h2 id="grunt">Grunt</h2>
+<p><strong>Description:</strong><br />
+Use Grunt for compiling SASS and JS as well as propagating 3rd party libraries.</p>
+<p><strong>Usage:</strong><br />
+Navigate to the grunt directory<br />
+<code>cd _presentation/grunt</code></p>
+<p>Then run the command<br />
+<code>grunt</code></p>
+<p>Any changes made will be automatically detected by the watchers and spin off a build.</p>
+<h2 id="nodejs">Node.js</h2>
+<p><strong>Description:</strong><br />
+Use Node.js for server-side development.</p>
+<p><strong>Usage:</strong><br />
+Navigate to the node directory<br />
+<code>cd _node</code></p>
+<p>Then run the command<br />
+<code>npm start</code></p>
+<h2 id="angularjs">Angular.js</h2>
+<p><strong>Description:</strong><br />
+Front-end framework used for templating and portal navigation</p>
+<p><strong>Directories:</strong><br />
+<code>/views/</code> - location of templates<br />
+<code>/views/layout/</code> - pages templates<br />
+<code>/views/includes/</code> - partial templates<br />
+<code>/_presentation/js/angular/</code> - raw angular js files<br />
+<code>/_presentation/js/angular/components</code> - angular compontents to include<br />
+<code>/_presentation/js/angular/master_modules</code> - modules in this directory are combined into one js file<br />
+<code>/_presentation/js/angular/modules</code> - modules in this directory must be loaded up separately</p>
+<p><strong>Files:</strong><br />
+<code>*.config.js</code> - configuration<br />
+<code>*.controller.js</code> - controller<br />
+<code>*.directive.js</code> - directive<br />
+<code>*.filter.js</code> - filter<br />
+<code>*.routes.js</code> - routes configuration<br />
+<code>*.service.js</code> - injectable service  </p>
+<p><code>/_presentation/js/angular/master_modules/_app.js</code> - initializes the angular app<br />
+<code>/_presentation/js/angular/master_modules/_app.routes.js</code> - declares different url routes<br />
+<code>/_presentation/js/angular/master_modules/app.controller.js</code> - main controller for the angular app  </p>
+<h2 id="aws-instance">AWS Instance</h2>
+<p><strong>Whitelisted IP Address</strong><br />
+We are currently whitelisting IP addresses for security restrictions within the .htaccess file. </p>
+<p>To add a new IP address:<br />
+<code>cd /var/www/html</code>  </p>
+<p>Then open the <code>.htaccess</code> file  </p>
+<p>Append the new IP address using the format:<br />
+<code>Allow from XXX.XXX.XXX.XXX</code>  </p>
+<p><strong>Run the Node Instance</strong><br />
+Navigate to the node foler
+<code>cd /var/www/html/_node</code>  </p>
+<p>Then start it up using the command:<br />
+<code>npm start</code></p>
+    </div>
+  </div>
+</body>
+</html>

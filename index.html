@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="App">
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<base href="/">
+		<title>Sam.gov Reporting</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+		<!-- CSS DEV-->
+		<link rel="icon" type="image/png" href="/img/favicons/favicon.ico">
+		<link rel="stylesheet" type="text/css" href="/css/concat/style.concat.css" />
+
+		<!-- CSS PROD -->
+		<!-- <link rel="stylesheet" type="text/css" href="/css/min/style.min.css" /> -->
+
+		<!-- JS -->
+		<script src="/js/min/jquery.min.js"></script>
+		<script src="/js/min/angular.min.js"></script>
+		<script src="/js/concat/app.concat.js"></script>
+		<script src="/js/min/iae-widgets.min.js"></script>
+		<script src="/js/min/ie9-helpers.min.js"></script>
+		
+		<!-- JS PROD -->
+		<!-- <script src="/js/min/app.min.js"></script> -->
+	</head>
+
+	<body>
+		<noscript>
+		    <p class="usa-grid">This website is not intended for use with JavaScript disabled. See CLP site for disabled javascript version.</p>
+		</noscript>
+
+		<section id="iae-header"></section>
+		<main ng-view></main>
+		<section id="iae-footer"></section>
+	</body>
+</html>

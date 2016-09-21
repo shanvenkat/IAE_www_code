@@ -1,0 +1,14 @@
+# ignore temporary word files
+~*
+
+# ignore sass cache files
+.sass-cache
+
+# ignore git directories
+.git
+
+# ignore node modules which are pulled in via package managers
+node_modules
+
+# ignore node.js compiled files
+bin

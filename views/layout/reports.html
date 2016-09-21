@@ -1,0 +1,8 @@
+<section class="usa-grid">
+	<ul>
+		<!-- loops through DB_Reports and creates navigation items for each Report -->
+		<li ng-repeat="report in ReportsSVC.getAll()">
+			<a href="/reports/{{report.name}}">{{report.name}}</a>
+		</li>
+	</ul>
+</section>
